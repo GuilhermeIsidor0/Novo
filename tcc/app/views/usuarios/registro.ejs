@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="/css/registro.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="right">
+    <img src="/assets/user.png" alt="Cadastro">
+    <h2>CADASTRE-SE</h2>
+    <p class="login-link">Já possui uma conta? <a href="/login">Entrar</a></p>
+
+    <% if (errosValidacao.length > 0) { %>
+      <ul class="erros">
+        <% errosValidacao.forEach(function(erro) { %>
+          <li><%= erro.msg %></li>
+        <% }) %>
+      </ul>
+    <% } %>
+
+    <form action="/registro" method="post">
+      <div class="form-group">
+        <input type="text" name="nome" placeholder="Nome" value="<%= usuario.nome %>" required>
+      </div>
+      <div class="form-group">
+        <input type="email" name="email" placeholder="E-mail" value="<%= usuario.email %>" required>
+      </div>
+      <div class="form-group">
+        <input type="password" name="senha" placeholder="Senha" required>
+      </div>
+      <button type="submit">Cadastrar</button>
+
+      <p class="info-termos">
+        Ao se cadastrar, você concorda com nossos
+        <a href="/termos">Termos de Uso</a> e
+        <a href="/privacidade">Política de Privacidade</a>.
+      </p>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>

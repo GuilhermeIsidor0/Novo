@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/assets/cerebro.svg">
+    <link rel="stylesheet" href="/css/index.css">
+    <title>Memoriam</title>
+</head>
+
+<body>
+    <header>
+        <nav class="itens">
+            <ul>
+                <li class="logo">
+                    <img src="/assets/logo.png" alt="logo" draggable="false">
+                    <h2>Memoriam</h2>
+                    <span class="social">
+                        <img class="instagram" src="/assets/instagram.svg" draggable="false" alt="Instagram">
+                        <img class="facebook" src="/assets/facebook.svg" draggable="false" alt="Facebook">
+                        <img class="twitter" src="/assets/twitter.svg" draggable="false" alt="Twitter">
+                    </span>
+                </li>
+                <li><a href="index.ejs">Início</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Jogos</a></li>
+                <li><a href="#">Recursos</a></li>
+
+                <!-- Dropdown Login -->
+                <li id="dropdown-login" style="position:relative; cursor:pointer;">
+                    <span>Sair</span>
+                    <div id="dropdown-content-login"
+                        style="display:none; position:absolute; background:#044c86; border:1px solid #ccc; padding:5px;">
+                        <a href="/login">Entrar</a><br>
+                        <a href="/registro">Registrar</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <div class="fundo">
+
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+            <h1></h1>
+        </div>
+        <section id="sobre">
+            <div class="titulo">
+                <h1>O que fazemos:</h1>
+            </div>
+
+            <div class="conteudo">
+                <div>
+                    <img src="/assets/cerebro.svg" draggable="false" alt="">
+                    <h2>Treino Cognitivo</h2>
+                    <p>O Memoriam é um projeto dedicado a auxiliar pessoas no cuidado com a memória e bem-estar.</p>
+                </div>
+
+                <div>
+                    <img src="/assets/heart.svg" draggable="false" alt="">
+                    <h2>Doe</h2>
+                    <p>Nosso objetivo é criar recursos acessíveis e interativos para estimular a memória.</p>
+                </div>
+
+                <div>
+                    <img src="/assets/game.svg" draggable="false" alt="">
+                    <h2>Jogos Neuroestimulantes</h2>
+                    <p>Experiências lúdicas e educativas que podem ser utilizadas diariamente.</p>
+                </div>
+
+                <div>
+                    <img src="/assets/group.svg" draggable="false" alt="">
+                    <h2>Suporte da Comunidade</h2>
+                    <p>Recursos acessíveis e interativos para estimular a memória.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- seção História do Alzheimer -->
+        <section id="sobre">
+            <div class="titulo">
+                <h1>História do Alzheimer</h1>
+            </div>
+
+            <div class="linha esquerda">
+                <div class="imagem">
+                    <img src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/bd36/live/6df26860-298b-11ee-b1d7-8fdc93c2782e.jpg.webp"
+                        alt="ALois Alzheimer" draggable="false">
+                </div>
+                <div class="texto">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean feugiat elementum quam, in
+                        rhoncus diam maximus ornare. Sed id magna vel augue fringilla congue. Mauris aliquam odio
+                        mauris, at euismod nisl lobortis sit amet. Duis tellus odio, vulputate at efficitur vel,
+                        ullamcorper porttitor urna. Etiam mollis condimentum purus, eu imperdiet felis ullamcorper sed.
+                        Nullam et diam a risus lacinia blandit. Donec varius nisi in augue sodales congue. Quisque sed
+                        odio felis. Pellentesque ut lectus et leo suscipit facilisis. Proin gravida viverra elit, et
+                        pulvinar lacus auctor sed.</p>
+                </div>
+            </div>
+
+            <div class="linha direita">
+                <div class="imagem">
+                    <img src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/5acf/live/29381ac0-2996-11ee-b1d7-8fdc93c2782e.jpg.webp"
+                        alt="August Deter" draggable="false">
+                </div>
+                <div class="texto">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean feugiat elementum quam, in
+                        rhoncus diam maximus ornare. Sed id magna vel augue fringilla congue. Mauris aliquam odio
+                        mauris, at euismod nisl lobortis sit amet. Duis tellus odio, vulputate at efficitur vel,
+                        ullamcorper porttitor urna. Etiam mollis condimentum purus, eu imperdiet felis ullamcorper sed.
+                        Nullam et diam a risus lacinia blandit. Donec varius nisi in augue sodales congue. Quisque sed
+                        odio felis. Pellentesque ut lectus et leo suscipit facilisis. Proin gravida viverra elit, et
+                        pulvinar lacus auctor sed.</p>
+                </div>
+            </div>
+
+            <div class="titulo">
+                <h1>O que é o Alzheimer</h1>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean feugiat elementum quam, in rhoncus diam
+                maximus ornare. Sed id magna vel augue fringilla congue. Mauris aliquam odio mauris, at euismod nisl
+                lobortis sit amet. Duis tellus odio, vulputate at efficitur vel, ullamcorper porttitor urna. Etiam
+                mollis condimentum purus, eu imperdiet felis ullamcorper sed. Nullam et diam a risus lacinia blandit.
+                Donec varius nisi in augue sodales congue. Quisque sed odio felis. Pellentesque ut lectus et leo
+                suscipit facilisis. Proin gravida viverra elit, et pulvinar lacus auctor sed.</p>
+
+         <div class="titulo">
+    <h1>Sintomas</h1>
+</div>
+<p>Alguns dos sintomas mais comuns são:</p>
+<ol class="sintomas">
+    <li>
+        <strong>Perda de memória que interrompe a vida diária:</strong>
+        <ul>
+            <li>Esquecer informações recém-aprendidas.</li>
+            <li>Repetir perguntas ou histórias.</li>
+            <li>Esquecer datas ou compromissos importantes.</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Desafios no planejamento ou na resolução de problemas:</strong>
+        <ul>
+            <li>Dificuldade para seguir receitas ou gerenciar contas.</li>
+            <li>Demora para concluir tarefas que antes eram simples.</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Dificuldade em completar tarefas familiares:</strong>
+        <ul>
+            <li>Esquecer como realizar tarefas diárias conhecidas.</li>
+            <li>Dificuldade para se orientar em locais familiares.</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Confusão com tempo ou lugar:</strong>
+        <ul>
+            <li>Perder a noção de datas, estações do ano ou local.</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Dificuldade em compreender imagens visuais e relações espaciais:</strong>
+        <ul>
+            <li>Problemas para julgar distâncias ou cores.</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Novos problemas com palavras na fala ou escrita:</strong>
+        <ul>
+            <li>Dificuldade para encontrar palavras ou se expressar corretamente.</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Perder coisas e perder a capacidade de refazer os passos:</strong>
+        <ul>
+            <li>Colocar objetos em lugares incomuns e não conseguir recuperá-los.</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Julgamento diminuído ou deficiente:</strong>
+        <ul>
+            <li>Tomada de decisões ruim, descuido com finanças ou higiene pessoal.</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Retirada do trabalho ou atividades sociais:</strong>
+        <ul>
+            <li>Perda de interesse por hobbies ou atividades sociais.</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Mudanças de humor e personalidade:</strong>
+        <ul>
+            <li>Alterações de humor, ansiedade, depressão ou suspeita em relação aos outros.</li>
+        </ul>
+    </li>
+</ol>
+
+<p class="fonte" style="font-size:0.85rem; color:#555; text-align:right; margin-top:1rem;">
+Fonte: <a href="https://www.alz.org/alzheimers-dementia/10_signs" target="_blank">Alzheimer’s Association</a>
+</p>
+
+
+            <div class="titulo">
+                <h1>Diagnóstico</h1>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean feugiat elementum quam, in rhoncus diam
+                maximus ornare. Sed id magna vel augue fringilla congue. Mauris aliquam odio mauris, at euismod nisl
+                lobortis sit amet. Duis tellus odio, vulputate at efficitur vel, ullamcorper porttitor urna. Etiam
+                mollis condimentum purus, eu imperdiet felis ullamcorper sed. Nullam et diam a risus lacinia blandit.
+                Donec varius nisi in augue sodales congue. Quisque sed odio felis. Pellentesque ut lectus et leo
+                suscipit facilisis. Proin gravida viverra elit, et pulvinar lacus auctor sed.</p>
+
+            <div class="titulo">
+                <h1>Tratamento</h1>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean feugiat elementum quam, in rhoncus diam
+                maximus ornare. Sed id magna vel augue fringilla congue. Mauris aliquam odio mauris, at euismod nisl
+                lobortis sit amet. Duis tellus odio, vulputate at efficitur vel, ullamcorper porttitor urna. Etiam
+                mollis condimentum purus, eu imperdiet felis ullamcorper sed. Nullam et diam a risus lacinia blandit.
+                Donec varius nisi in augue sodales congue. Quisque sed odio felis. Pellentesque ut lectus et leo
+                suscipit facilisis. Proin gravida viverra elit, et pulvinar lacus auctor sed.</p>
+            <div class="titulo">
+                <h1>Como jogos ajudam no tratamento</h1>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean feugiat elementum quam, in rhoncus diam
+                maximus ornare. Sed id magna vel augue fringilla congue. Mauris aliquam odio mauris, at euismod nisl
+                lobortis sit amet. Duis tellus odio, vulputate at efficitur vel, ullamcorper porttitor urna. Etiam
+                mollis condimentum purus, eu imperdiet felis ullamcorper sed. Nullam et diam a risus lacinia blandit.
+                Donec varius nisi in augue sodales congue. Quisque sed odio felis. Pellentesque ut lectus et leo
+                suscipit facilisis. Proin gravida viverra elit, et pulvinar lacus auctor sed.</p>
+        </section>
+
+
+        <footer>
+            <strong>
+                <p>&copy; 2025 Todos os direitos reservados.</p>
+            </strong>
+        </footer>
+        <script src="/js/index.js"></script>
+</body>
+
+</html>

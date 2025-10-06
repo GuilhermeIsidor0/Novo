@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Nunito:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body, p, li {
+    line-height: 1.8;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1.8rem;
+}
+
+nav.itens {
+    background-color: #137fd9;
+    padding: 1rem 2rem;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav.itens ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav.itens ul li {
+    display: flex;
+    align-items: center;
+}
+
+nav.itens ul li.logo {
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+}
+
+nav.itens ul li.logo img {
+    width: 10rem;
+    height: auto;
+    display: block;
+}
+
+nav.itens ul li.logo .social {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    gap: 0.8rem;
+}
+
+nav.itens ul li.logo .social img {
+    width: 1.5625rem;
+    height: 1.5625rem;
+    cursor: pointer;
+    filter: brightness(0) invert(1);
+    transition: 0.3s ease;
+}
+
+nav.itens ul li.logo .social img:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+nav.itens ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 0.3125rem 0.5rem;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+nav.itens ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 0.5rem;
+}
+
+.fundo {
+    width: 100%;
+    min-height: 70vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    transition: background-image 1s ease-in-out;
+}
+
+.fundo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit;
+    background-position: inherit;
+    background-size: inherit;
+    filter: blur(8px);
+    transform: scale(1.1);
+    z-index: 0;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2.5rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    z-index: 2;
+    border-radius: 0.5rem;
+    transition: 0.3s ease, transform 0.2s ease;
+}
+
+.prev {
+    left: 1rem;
+}
+
+.next {
+    right: 1rem;
+}
+
+.prev:hover,
+.next:hover {
+    background: rgba(255, 255, 255, 0.6);
+    color: black;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.fundo h1 {
+    position: relative;
+    z-index: 1;
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 0.125rem 0.125rem 0.625rem rgba(0, 0, 0, 0.7);
+}
+
+#sobre {
+    padding: 4%;
+    position: relative;
+    text-align: justify;
+    font-size: 1.3rem;
+}
+
+#sobre .titulo {
+    text-align: left;
+    font-size: 2rem;
+    color: #004279;
+    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+}
+
+#sobre p {
+    margin-bottom: 1.8rem;
+}
+
+#sobre .sintomas {
+    margin-left: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+#sobre .sintomas ul {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem;
+}
+
+#sobre .sintomas li strong {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.linha {
+    position: relative;
+    width: 100%;
+    min-height: 18.75rem;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.linha .imagem,
+.linha .texto {
+    width: 50%;
+    padding: 0.9375rem;
+}
+
+.linha.esquerda .imagem { order: 0; }
+.linha.esquerda .texto { order: 1; }
+.linha.direita .imagem { order: 1; }
+.linha.direita .texto { order: 0; }
+
+.linha img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 0.5rem;
+}
+
+.linha p {
+    margin-bottom: 2rem;
+}
+
+.conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.conteudo>div {
+    flex: 1 1 calc(25% - 2rem);
+    max-width: calc(25% - 2rem);
+    text-align: center;
+    background: #f5f8ff;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 2rem;
+}
+
+.conteudo>div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.conteudo img {
+    width: 50%;
+    max-width: 12.5rem;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.conteudo h2 {
+    margin: 1rem 0 0.5rem 0;
+    color: #004279;
+}
+
+.conteudo p {
+    margin-bottom: 1.5rem;
+}
+
+footer {
+    background-color: #137fd9;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 1rem;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1024px) {
+    .fundo h1 { font-size: 2.5rem; }
+}
+
+@media (max-width: 768px) {
+    nav.itens ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+    }
+    
+    nav.itens ul li.logo img { width: 5rem; }
+
+    .fundo {
+        height: 90vh;
+        position: relative;
+    }
+
+    .fundo > h1 {
+        position: absolute;
+        top: 60%; 
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 100%;
+        z-index: 2;
+    }
+
+    .fundo > .prev,
+    .fundo > .next {
+        top: 60%;
+        transform: translateY(-50%);
+    }
+
+    .fundo > .prev { left: 0.5rem; }
+    .fundo > .next { right: 0.5rem; }
+
+    .linha {
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .linha .imagem,
+    .linha .texto { width: 100%; text-align: center; }
+
+    .linha .texto p { text-align: justify; }
+
+    .conteudo>div {
+        flex: 1 1 45%;
+        max-width: 45%;
+    }
+
+    .conteudo img { width: 70%; }
+}
+
+@media (max-width: 480px) {
+    nav.itens ul li.logo img { width: 3rem; }
+
+    .fundo h1 { font-size: 1.8rem; padding: 0 1rem; }
+
+    .conteudo>div {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .conteudo img { width: 80%; }
+
+    #sobre .titulo {
+        font-size: 1.5rem;
+        margin-top: 1.5rem;
+        margin-bottom: 0.8rem;
+    }
+}

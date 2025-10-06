@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="right">
+      <img src="/assets/user.png" alt="Login Image">
+      <h2>ENTRAR</h2>
+
+      <% if (erro) { %>
+        <p class="erro"><%= erro %></p>
+      <% } %>
+
+      <form action="/login" method="post">
+        <div class="form-group">
+          <input type="email" name="email" placeholder="E-mail" required>
+        </div>
+
+        <div class="form-group">
+          <input type="password" name="senha" placeholder="Senha" required>
+        </div>
+
+        <div class="form-group recuperar">
+          <span>Esqueceu a senha?</span>
+          <a href="/recuperar-senha">Recuperar senha</a>
+        </div>
+
+        <div class="form-group termos">
+          <input type="checkbox" name="termo" >
+          <span>Lembrar meu login</span>
+        </div>
+
+        <button type="submit">Entrar</button>
+        <p class="cadastro">Não tem uma conta? <a href="/registro">Cadastre-se</a></p>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
